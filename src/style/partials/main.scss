@@ -1,0 +1,74 @@
+// Colors
+
+$color_white: #fff;
+$color_blue: #1677bb;
+
+
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.mg {
+  height: auto;
+}
+
+.title {
+  margin: 0;
+}
+
+.btn_blue {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 196px;
+  height: 33px;
+  border: 2px solid $color_blue;
+  color: $color_blue;
+  font-size: 14px;
+  font-family: 'ProximaNova-Extrabld';
+  line-height: 36px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  &:hover {
+    background-color: $color_blue;
+    color: #fff;
+  }
+}
+
+.btn_video {
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    span {
+      transition: 0.5s;
+      color: $color_blue;
+      border-bottom: 1px solid $color_blue;
+    }
+  }
+  span {
+    color: #596f83;
+    font-size: 14px;
+    font-family: 'ProximaNova-Semibold';
+    line-height: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-bottom: 1px solid #596f83;
+  }
+  img {
+    margin-right: 20px;
+  }
+}
