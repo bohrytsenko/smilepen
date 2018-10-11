@@ -1,12 +1,114 @@
 $r-768: 768px;
-$r-936: 936px;
-$r-980: 980px;
+$r-992: 992px;
 $r-1024: 1024px;
-$r-1174: 1174px;
+$r-1200: 1200px;
 
-// break max-768
-@media only screen and (max-width: $r-768 - 1) {
-  .container {
-    padding: 0 15px;
+body {
+  // break max-768
+  @media only screen and (max-width: $r-768) {
+    .container {
+      padding: 0 15px;
+    }
+    .header_top ul {
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        font-size: 12px;
+      }
+    }
+    .header_wrap_row {
+      flex-wrap: wrap;
+      &__nav,
+      &__logo {
+        width: 50%;
+      }
+      &__logo {
+        img {
+          width: 100%;
+        }
+      }
+      &__shop {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    .home_header_info__btns {
+      flex-direction: column;
+      align-items: flex-start;
+      a {
+        margin-bottom: 20px;
+      }
+    }
+    .home_links {
+      flex-wrap: wrap;
+      &__item {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .home_popular__title .title, .home_reviews__title .title {
+      font-size: 32px;
+    }
+    .products_item {
+      width: 90%;
+    }
+    .reviews_range ul li .bar {
+      width: 80px;
+    }
+    .reviews_range {
+      margin: 0 0 30px 0;
+      width: 100%;
+    }
+    .reviews_stat {
+      flex-wrap: wrap;
+    }
+    .home_insta__follow a {
+      font-size: 7px;
+    }
+    .footer_top {
+      flex-wrap: wrap;
+      &__logo {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &__nav {
+        width: 100%;
+        ul {
+          flex-direction: column;
+          margin-bottom: 30px;
+          li {
+            padding: 0;
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .footer_bottom {
+      flex-wrap: wrap;
+      &__item {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  // break max-1200
+  @media only screen and (min-width: $r-768 + 1) and (max-width: $r-1200) {
+    .container {
+      padding: 0 15px;
+    }
+    .header_wrap_row__logo img {
+      width: 200px;
+    }
+    .products_item {
+      width: 40%;
+    }
+    .reviews_range ul li .bar {
+      width: 330px;
+    }
+    .footer_top__nav {
+      width: 75%;
+    }
   }
 }

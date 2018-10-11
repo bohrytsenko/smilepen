@@ -56,19 +56,6 @@
     .rating {
       margin-right: 13px;
     }
-    .ui.star.rating .icon {
-      text-shadow: none!important;
-      font-size: 18px!important;
-    }
-    .ui.star.rating .active.icon {
-      color: #16baf1!important;
-      text-shadow: none!important;
-    }
-    .ui.star.rating .icon.selected, .ui.star.rating .icon.selected.active{
-      color: #16baf1!important;
-      text-shadow: none!important;
-      font-size: 18px!important;
-    }
   }
   &__list {
     display: flex;
@@ -190,4 +177,18 @@
       text-align: center;
     }
   }
+}
+
+body .ui.star.rating .icon {
+  text-shadow: none!important;
+  font-size: 18px!important;
+}
+body .ui.star.rating .active.icon {
+  color: #16baf1!important;
+  text-shadow: none!important;
+}
+body .ui.star.rating .icon.selected, .ui.star.rating .icon.selected.active{
+  color: #16baf1!important;
+  text-shadow: none!important;
+  font-size: 18px!important;
 }
