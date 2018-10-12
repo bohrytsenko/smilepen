@@ -4,6 +4,23 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  &__load {
+    width: 100%;
+    text-align: center;
+    margin-top: 33px;
+    a {
+      min-width: 196px;
+      height: 50px;
+      border: 2px solid $color_blue;
+      cursor: pointer;
+      position: relative;
+      padding: 0;
+      i {
+        position: absolute;
+        left: 15px;
+      }
+    }
+  }
 }
 
 .products_item {
@@ -12,7 +29,7 @@
   max-width: 100%;
   border: 1px solid #b9cbd8;
   padding: 50px 0;
-  margin: 0 0 28px -1px;
+  margin: -1px 0 0 -1px;
   position: relative;
   &:hover {
     transition: 0.5s;

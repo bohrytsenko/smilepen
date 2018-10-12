@@ -1,0 +1,120 @@
+// Subpage
+
+.subpage_header {
+  padding: 55px 0 65px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.subpage_header_info {
+  &__title {
+    width: 595px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    .title {
+      color: $color_blue;
+      font-size: 48px;
+      font-family: 'ProximaNovaT-Thin';
+      line-height: 48px;
+      text-transform: uppercase;
+      b {
+        display: block;
+        color: #596f83;
+        font-family: 'ProximaNovaT-Light';
+        letter-spacing: 0.96px;
+      }
+    }
+  }
+  &__text {
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 40px;
+    p {
+      color: #587a93;
+      font-size: 18px;
+      font-family: 'ProximaNova-Semibold';
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.36px;
+    }
+  }
+  &__list {
+    margin-bottom: 30px;
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        color: #587a93;
+        font-size: 18px;
+        font-family: 'ProximaNovaT-Regular';
+        line-height: 24px;
+        letter-spacing: 0.36px;
+        margin-bottom: 16px;
+        img {
+          width: 31px;
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    a {
+      &:first-child {
+        margin-right: 30px;
+        min-width: 264px;
+        height: 50px;
+        background-color: $color_blue;
+        color: $color_white;
+        &:hover {
+          background-color: $color_white;
+          color: $color_blue;
+        }
+      }
+      &:nth-child(2) {
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px solid $color_blue;
+        height: 50px;
+        min-width: 196px;
+        &:hover {
+          background-color: $color_white;
+          color: $color_blue;
+        }
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// Subpage products
+
+.subpage_products {
+  padding: 40px 0 30px 0;
+  &__title {
+    margin-bottom: 55px;
+    .title {
+      color: #587a93;
+      font-family: 'ProximaNovaT-Thin';
+      font-size: 48px;
+      line-height: 35px;
+      letter-spacing: 0.96px;
+      text-align: center;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+
+

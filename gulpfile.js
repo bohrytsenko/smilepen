@@ -30,7 +30,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: { //Пути откуда брать исходники
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+        html: 'src/*.*', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
@@ -57,7 +57,7 @@ var config = {
 };
 
 gulp.task('bower', function () {
-    gulp.src('./build/index.html')
+    gulp.src('./build/*.*')
         .pipe(wiredep({
             directory: "build/bower_comp"
         }))
