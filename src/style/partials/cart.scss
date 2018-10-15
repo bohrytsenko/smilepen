@@ -1,0 +1,346 @@
+// Cart
+
+.cart_details {
+  background-color: #f3f3fe;
+  padding: 45px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cart_details_item {
+  &:nth-child(2) {
+    width: 360px;
+    max-width: 100%;
+  }
+  &__total {
+    width: 100%;
+    box-shadow: 0 16px 51px rgba(0, 0, 0, 0.08);
+    background-color: $color_white;
+    padding: 40px 25px;
+  }
+}
+
+.cart_total {
+  &__delivery {
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    p {
+      color: #5c7c95;
+      font-size: 24px;
+      font-family: 'ProximaNovaT-Regular';
+      line-height: 24px;
+      letter-spacing: 0.48px;
+      margin-bottom: 0;
+    }
+    span {
+      color: #1c7abd;
+      font-family: 'ProximaNova-Extrabld';
+      font-size: 24px;
+      line-height: 48px;
+      text-transform: uppercase;
+      letter-spacing: 0.48px;
+    }
+  }
+  &__free {
+    margin-bottom: 40px;
+    p {
+      color: #587a93;
+      font-family: 'ProximaNovaT-Regular';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+  }
+  &__btn {
+    margin-bottom: 55px;
+    a {
+      width: 310px;
+      max-width: 100%;
+      margin: 0 auto;
+      height: 50px;
+      border: 2px solid #1677bb;
+      background-color: #1677bb;
+      color: $color_white;
+      &:hover {
+        color: #1677bb;
+        background-color: $color_white;
+      }
+    }
+  }
+  &__features {
+    .title {
+      color: #587a93;
+      font-family: 'ProximaNova-Extrabld';
+      font-size: 18px;
+      line-height: 35px;
+      text-transform: uppercase;
+      letter-spacing: 0.36px;
+      margin-bottom: 30px;
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        color: #587a93;
+        font-family: 'ProximaNovaT-Regular';
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        padding-left: 30px;
+        &:before {
+          position: absolute;
+          content: '';
+          background-image: url("../img/icon_header_top.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 14px;
+          height: 14px;
+          left: 0;
+        }}
+    }
+  }
+}
+
+.cart_details_item {
+  &:first-child {
+    width: 747px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.cart_person {
+  width: 360px;
+  max-width: 100%;
+  &__info {
+    display: block;
+    .form_radio {
+      margin-bottom: 20px;
+      display: inline-flex;
+      input {
+        height: auto;
+        width: auto;
+        margin-right: 15px;
+      }
+      label {
+        color: #587a93;
+        font-size: 16px;
+        font-family: 'ProximaNovaT-Regular';
+        line-height: 1;
+        letter-spacing: 0.32px;
+        margin-right: 20px;
+      }
+    }
+    input[type="text"] {
+      width: 100%;
+      padding-left: 35px;
+    }
+  }
+  &__code {
+    display: flex;
+    align-items: center;
+    input[type="text"] {
+      width: 195px;
+      max-width: 100%;
+      margin: 0;
+      padding-left: 35px;
+    }
+    input[type="submit"] {
+      width: 165px;
+      max-width: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.cart_person,
+.cart_code,
+.cart_address,
+.cart_payment {
+  &__title {
+    display: flex;
+    align-items: center;
+    color: #7590a5;
+    font-size: 24px;
+    font-family: 'ProximaNova-Extrabld';
+    letter-spacing: 0.48px;
+    img {
+      margin-right: 22px;
+    }
+  }
+}
+
+.cart_person {
+  &__title {
+    margin-bottom: 53px;
+  }
+}
+
+.cart_code {
+  &__title {
+    margin-bottom: 17px;
+  }
+}
+
+.cart_address {
+  &__title {
+    margin-bottom: 38px;
+  }
+}
+
+.cart_payment {
+  &__title {
+    margin-bottom: 35px;
+  }
+}
+
+.cart_address {
+  width: 360px;
+  max-width: 100%;
+  form {
+    select {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      padding-left: 35px;
+    }
+    input[type="email"],
+    input[type="tel"] {
+      padding-left: 50px;
+    }
+    .input_street {
+      width: 264px;
+    }
+    .input_building {
+      width: 82px;
+    }
+    .input_postcode {
+      width: 149px;
+    }
+    .input_state {
+      width: 194px;
+    }
+  }
+}
+
+.cart_payment {
+  width: 100%;
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    input {
+      height: auto;
+      width: auto;
+      margin: 0;
+      margin-right: 15px;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      color: #587a93;
+      font-size: 16px;
+      font-family: 'ProximaNovaT-Regular';
+      line-height: 1;
+      letter-spacing: 0.32px;
+      img {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+// Cart choose
+
+.cart_choose {
+  padding: 90px 0 75px 0;
+}
+
+.cart_choose_item {
+  border: 1px solid #b9cbd8;
+  margin: -1px 0 0 0;
+  padding: 23px 40px 40px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    img {
+      width: 115px;
+      margin-right: 15px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+  }
+}
+
+.cart_choose {
+  &__info {
+    padding-top: 25px;
+    color: #587a93;
+    font-family: 'ProximaNovaT-Regular';
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+  }
+  &__quantity {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    .title {
+      color: #587a93;
+      font-size: 14px;
+      font-family: 'ProximaNova-Extrabld';
+      line-height: 36px;
+      text-transform: uppercase;
+      margin-right: 15px;
+    }
+    form {
+      .quantity {
+        width: 85px;
+        height: 50px;
+        background-color: #1677bb;
+        display: flex;
+        align-items: center;
+      }
+      input {
+        height: auto;
+        width: 33%;
+        padding: 0;
+        margin: 0;
+        color: $color_white;
+        text-align: center;
+        background-color: inherit;
+        font-family: 'ProximaNovaT-Regular';
+        font-size: 24px;
+        letter-spacing: 0.48px;
+      }
+      .minus,
+      .plus {
+        cursor: pointer;
+      }
+    }
+  }
+  &__price {
+    margin-right: 30px;
+    color: #1c7abd;
+    font-family: 'ProximaNova-Extrabld';
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.48px;
+  }
+}

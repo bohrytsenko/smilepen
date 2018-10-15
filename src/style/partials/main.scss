@@ -4,6 +4,10 @@ $color_white: #fff;
 $color_blue: #1677bb;
 
 
+.show_mobile {
+  display: none;
+}
+
 .container {
   width: 1140px;
   max-width: 100%;
@@ -70,5 +74,103 @@ ul {
   }
   img {
     margin-right: 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  select {
+    appearance: none;
+    height: 50px;
+    background-color: $color_white;
+    outline: 0;
+    border: 0;
+    padding-left: 35px;
+    color: #587a93;
+    font-family: 'ProximaNovaT-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    background-image: url("../img/icon_select.svg");
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    padding: 15px 50px;
+    margin-bottom: 35px;
+    color: #587a93;
+    font-family: 'ProximaNovaT-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    &::placeholder {
+      color: #587a93;
+      font-family: 'ProximaNovaT-Regular';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+  }
+  input {
+    margin-bottom: 18px;
+    width: 48%;
+    height: 50px;
+    background-color: $color_white;
+    outline: 0;
+    border: 0;
+    padding-left: 50px;
+    color: #587a93;
+    font-family: 'ProximaNovaT-Regular';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    &::placeholder {
+      color: #587a93;
+      font-family: 'ProximaNovaT-Regular';
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: 0.32px;
+    }
+  }
+  input[type="email"] {
+    background-image: url("../img/icon_email.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 25px;
+  }
+  input[type="tel"] {
+    background-image: url("../img/icon_phone.svg");
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 25px;
+  }
+  input[type="submit"] {
+    height: 50px;
+    width: 225px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid #1677bb;
+    color: #1677bb;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'ProximaNova-Extrabld';
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      background-color: #1677bb;
+      color: $color_white;
+      transition: 0.5s;
+    }
   }
 }

@@ -45,6 +45,48 @@ $( document ).ready(function() {
         $('.header__navigation').removeClass('header__fixed');
     });
 
+    // Quantity
+
+    jQuery(document).ready(function(){
+        $(".plus").click( function(e) {
+            e.preventDefault();
+            // Define field variable
+            field = "input[name=" + $(this).attr("field") + "]";
+            // Get its current value
+            var currentVal = parseInt($(field).val());
+            // If is not undefined
+            if ( !isNaN(currentVal) && currentVal < 99 ) {
+                // Increment
+                $(field).val(currentVal + 1);
+            }
+        });
+
+        // This button will decrement the value till 0
+        $(".minus").click( function(e) {
+
+            e.preventDefault();
+
+            // Define field variable
+            field = "input[name=" + $(this).attr("field") + "]";
+
+            // Get its current value
+            var currentVal = parseInt($(field).val());
+
+            // If it isn't undefined or its greater than 0
+            if ( !isNaN(currentVal) && currentVal > 1 ) {
+                // Decrement one
+                $(field).val(currentVal - 1);
+            }
+
+        });
+    });
+
+    // Delete total
+
+    $('.cart_choose__delete').on('click', function () {
+        $(this).parents('.cart_choose_item').fadeOut();
+    });
+
     // Dropdown
 
     $('.ui.dropdown')
