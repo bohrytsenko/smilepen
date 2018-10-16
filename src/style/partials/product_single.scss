@@ -1,0 +1,235 @@
+// Product single
+
+.product_single {
+  padding: 25px 0 125px 0;
+  border-top: 1px solid #dde4ea;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product_single_slider {
+  width: 480px;
+  max-width: 100%;
+  .gallery-top {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto 40px auto;
+    .swiper-slide {
+      width: 400px;
+      height: 400px;
+      img {
+        height: 400px;
+        max-width: 100%;
+      }
+      .swiper-slide-container {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  .gallery-thumbs {
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-image: none;
+      width: 15px;
+      height: 15px;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-slide {
+      cursor: pointer;
+      width: 152px;
+      height: 152px;
+      text-align: center;
+      img {
+        width: 152px;
+        height: auto;
+      }
+      .swiper-slide-container {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    .swiper-slide-active {
+      border: 2px solid #1677bb;
+    }
+  }
+}
+
+.product_single_info {
+  width: 550px;
+  max-width: 100%;
+  &__reviews {
+    justify-content: flex-start;
+    margin-bottom: 35px;
+  }
+  &__title {
+    margin-bottom: 35px;
+    .title {
+      color: #587a93;
+      font-size: 48px;
+      font-family: 'ProximaNovaT-Thin';
+      line-height: 35px;
+      letter-spacing: 0.96px;
+    }
+  }
+  &__list {
+    flex-direction: column;
+    .title {
+      color: #587a93;
+      font-size: 18px;
+      font-family: 'ProximaNova-Extrabld';
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.36px;
+      margin-bottom: 25px;
+    }
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+  &__price {
+    margin-bottom: 20px;
+    .products_price__old {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    .products_price__new {
+      font-size: 24px;
+      line-height: 26px;
+      span {
+        color: #5c7c95;
+        font-family: 'ProximaNovaT-Light';
+        letter-spacing: 0.48px;
+      }
+    }
+  }
+  &__guarantee {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    img {
+      margin-right: 20px;
+      width: 50px;
+    }
+    p {
+      color: #647c8f;
+      font-size: 18px;
+      font-family: 'ProximaNovaT-Regular';
+      line-height: 36px;
+      letter-spacing: 0.36px;
+    }
+  }
+  &__additional {
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    width: 290px;
+    height: 50px;
+    max-width: 100%;
+    background-color: #f3f3fe;
+    color: #1677bb;
+    font-family: 'ProximaNovaT-Regular';
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    span {
+      color: #587a93;
+      letter-spacing: 0.32px;
+    }
+  }
+  &__quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    form {
+      .quantity {
+        display: flex;
+        align-items: center;
+        .quantity {
+          width: 85px;
+          height: 50px;
+          background-color: #1677bb;
+          display: flex;
+          align-items: center;
+        }
+        input[type="submit"] {
+          width: 198px;
+          max-width: 100%;
+          height: 50px;
+          background-color: #16baf1;
+          border: 2px solid #16baf1;
+          color: #ffffff;
+          font-size: 14px;
+          font-family: 'ProximaNova-Extrabld';
+          line-height: 36px;
+          text-transform: uppercase;
+          transition: 0.5s;
+          &:hover {
+            transition: 0.5s;
+            background-color: #fff;
+            color: #16baf1;
+          }
+        }
+        input {
+          width: 25px;
+          height: 50px;
+          padding: 0;
+          margin: 0;
+          color: $color_white;
+          text-align: center;
+          font-family: 'ProximaNovaT-Regular';
+          font-size: 24px;
+          letter-spacing: 0.48px;
+          background-color: #1677bb;
+        }
+        .minus,
+        .plus {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// Product faq
+
+.product_faq {
+  padding: 45px 0;
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+    .title {
+      color: #587a93;
+      font-family: 'ProximaNovaT-Thin';
+      font-size: 48px;
+      line-height: 35px;
+      letter-spacing: 0.96px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .about_quick_answer {
+      width: 50%;
+      margin-top: -1px;
+      &:nth-child(odd) {
+       border-right: 0;
+      }
+    }
+  }
+}
