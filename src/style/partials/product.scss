@@ -105,6 +105,33 @@
   }
   &__btn {
     text-align: center;
+    a {
+      margin-bottom: 10px;
+      &:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 196px;
+        height: 50px;
+        margin: 0 auto;
+        border: 2px solid $color_white;
+        background-color: #00deff;
+        color: #ffffff;
+        font-family: 'ProximaNova-Extrabld';
+        font-size: 14px;
+        line-height: 36px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        &:hover {
+          transition: 0.5s;
+          background-color: $color_white;
+          color: #00deff;
+        }
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
   }
   &__hover {
     display: flex;
