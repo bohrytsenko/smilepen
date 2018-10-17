@@ -1,35 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="eng">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <title>Smilepen</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bower_comp/semantic/dist/semantic.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_comp/swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="bower_comp/components-font-awesome/css/fontawesome-all.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<!--begin header-->
+<div class="header__over"></div>
+<header class="header">
+    <div class="header__navigation">
+        <ul>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="subpage.html">Shop</a>
+            </li>
+            <li>
+                <a href="cart.html">Cart</a>
+            </li>
+            <li>
+                <a href="product.html">Single product</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header__top header_top">
+        <div class="container">
+            <ul>
+                <li>Zufriedenheit oder Geld zuruck</li>
+                <li>Gratis weltweiter versand</li>
+                <li>Over billion satisfied customers</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__wrapper header_wrap">
+        <div class="container">
+            <div class="header_wrap__row header_wrap_row">
+                <div class="header_wrap_row__nav">
+                    <a href="#/">
+                        <img src="img/icon_nav.svg" alt="Navigation">
+                    </a>
+                </div>
+                <div class="header_wrap_row__logo">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="header_wrap_row__shop header_row_shop">
+                    <div class="header_row_shop__info header_shop_info">
+                        <a href="#/" class="header_shop_info__bag header_shop_bag">
+                            <div class="header_shop_bag__icon">
+                                <img src="img/icon_bag.svg" alt="Bag">
+                            </div>
+                            <div class="header_shop_bag__total">
+                                5
+                            </div>
+                        </a>
+                        <div class="header_row_shop__lang header_shop_lang">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="lang">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">ENG</div>
+                                <div class="menu">
+                                    <div class="item" data-value="1">ENG</div>
+                                    <div class="item" data-value="0">PL</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_row_shop__btn">
+                        <a class="btn_blue" href="#/">Zum Shop</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--end header-->
+
 <!--begin product single-->
 <section class="product_single">
     <div class="container">
         <div class="product_single__wrapper product_single_wrap">
             <div class="product_single_wrap__slider product_single_slider">
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_1.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_2.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_3.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_4.jpg')"></div></div>
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_1.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_2.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_3.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_4.jpg')"></div></div>
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_1.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_2.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_3.jpg')"></div></div>
+                        <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_4.jpg')"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><img src="img/icon__right_arrow_thumbnail.svg" alt="Arrow"></div>
+                    <div class="swiper-button-prev"><img src="img/icon_left_arrow_thumbnail.svg" alt="Arrow"></div>
                 </div>
             </div>
-            <div class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_1.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_2.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_3.jpg')"></div></div>
-                    <div class="swiper-slide"><div class="swiper-slide-container" style="background-image: url('img/img_product_4.jpg')"></div></div>
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"><img src="img/icon__right_arrow_thumbnail.svg" alt="Arrow"></div>
-                <div class="swiper-button-prev"><img src="img/icon_left_arrow_thumbnail.svg" alt="Arrow"></div>
-            </div>
-        </div>
             <div class="product_single_wrap__slider product_single_info">
                 <div class="product_single_info__reviews products_item__reviews">
                     <div class="ui star rating" data-rating="5" data-max-rating="5"></div>
                     <a href="#/">530 Bewertungen</a>
                 </div>
                 <div class="product_single_info__title">
-                    <h1 class="title">Bis zu 4x schnellere resultate!</h1>
+                    <h1 class="title">Holden sie sich das Komplettpaket für weisse zähne!</h1>
                 </div>
                 <div class="product_single_info__list products_item__list">
                     <h3 class="title">
@@ -467,27 +561,30 @@
                         <img src="img/icon_delete.svg" alt="Icon">
                     </a>
                 </div>
-                <div class="popup_wrap__special bg_blue_light">
-                    <p>bestseller</p>
+                <div class="popup_wrap__special bg_blue">
+                    <p>angebot</p>
                 </div>
                 <div class="popup_wrap__item">
-                    <img src="img/img_product_3.jpg" alt="Product">
+                    <img src="img/img_product_2.jpg" alt="Product">
                 </div>
                 <div class="popup_wrap__item popup_info">
                     <div class="popup_info__title">
-                        <h3 class="title">Bis zu 4x schnellere resultate!</h3>
+                        <h3 class="title">Holden sie sich das Komplettpaket für weisse zähne!</h3>
                     </div>
                     <div class="popup_info__reviews products_item__reviews">
                         <div class="ui star rating" data-rating="5" data-max-rating="5"></div>
                         <a href="#/">530 Bewertungen</a>
                     </div>
-                    <div class="popup_info__text">
-                        <p>Mit dem SmilePen Accelerator können Sie bei der Zahnbleaching Behandlung noch bessere & schnellere Ergebnisse erzielen.</p>
-                        <p>Dieses revolutionäre geschlossene System ermöglicht kurze Bleaching-Zyklen mit exzellenten Ergebnissen, da während der Behandlung kein Sauerstoff entweicht und so das Bleaching um bis 4 x intensiviert wird.</p>
-                        <p><b>Benötigt USB oder Smartphone Anschluss</b></p>
+                    <div class="popup_info__text products_item__list">
+                        <ul>
+                            <li>Vitamin E Tips – Schutz des Zahnfleisches</li>
+                            <li>Whitening Tips – Löst Verschmutzungen an</li>
+                            <li>Desensitizing Gel – Revitalisiert die Zähne</li>
+                            <li>Accelerator Gel - Damit Weiss, Weiss bleibt!</li>
+                        </ul>
                     </div>
                     <div class="popup_info__btns">
-                        <a class="btn_blue" href="#/">Ja, ich bestelle smilepen accelerator fÜr 79,90 dazu!</a>
+                        <a class="btn_blue" href="#/">Ja, ich bestelle das komplettpaket fÜr nur 99.00 statt 184.60 dazu!</a>
                         <a class="btn_blue" href="#/">Nein, danke</a>
                     </div>
                 </div>
@@ -496,3 +593,86 @@
     </div>
 </section>
 <!--end popup-->
+
+<!--begin footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top footer_top">
+            <div class="footer_top__logo">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="footer_top__nav">
+                <ul>
+                    <li>
+                        <a href="#/">Impressum</a>
+                    </li>
+                    <li>
+                        <a href="#/">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#/">Rückgabe und Erstattungsbedingungen</a>
+                    </li>
+                </ul>
+                <p>Results may vary - Ergebnisse können variieren - Les résultats peuvent varier - Risultati possono variare</p>
+            </div>
+        </div>
+        <div class="footer__bottom footer_bottom">
+            <div class="footer_bottom__item">
+                <h3 class="title">Verstand</h3>
+                <ul>
+                    <li>
+                        <img src="img/logo_dhl.svg" alt="Dhl">
+                    </li>
+                    <li>
+                        <img src="img/logo_dpd.svg" alt="Dhl">
+                    </li>
+                    <li>
+                        <img src="img/logo_abholung.svg" alt="Dhl">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_bottom__item">
+                <h3 class="title">Zahlunsgarten</h3>
+                <img src="img/img_payment.svg" alt="Payment">
+            </div>
+            <div class="footer_bottom__item">
+                <h3 class="title">Folge uns</h3>
+                <ul>
+                    <li>
+                        <a href="#/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer-->
+
+<!-- bower:js -->
+<script src="bower_comp/jquery/dist/jquery.js"></script>
+<script src="bower_comp/swiper/dist/js/swiper.js"></script>
+<script src="bower_comp/semantic/dist/semantic.js"></script>
+<!-- endbower -->
+<!-- Scripts -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

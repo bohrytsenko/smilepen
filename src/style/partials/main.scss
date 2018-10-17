@@ -2,6 +2,15 @@
 
 $color_white: #fff;
 $color_blue: #1677bb;
+$color_blue_light: #16baf1;
+
+.bg_blue_light {
+  background-color: $color_blue_light;
+}
+
+.bg_blue {
+  background-color: $color_blue;
+}
 
 
 .show_mobile {

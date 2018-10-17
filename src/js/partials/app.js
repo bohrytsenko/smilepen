@@ -83,7 +83,6 @@ $( document ).ready(function() {
 
     // Slider single product
 
-
     var galleryTop = new Swiper('.gallery-top', {
         spaceBetween: 10,
         navigation: {
@@ -111,6 +110,16 @@ $( document ).ready(function() {
         $(this).parents('.cart_choose_item').fadeOut();
     });
 
+    // Popup
+
+    $('.popup_open').on('click', function () {
+        $('.popup').fadeIn();
+    });
+
+    $('.popup_wrap__close a').on('click', function () {
+        $('.popup').fadeOut();
+    });
+
     // Dropdown
 
     $('.ui.dropdown')
@@ -129,6 +138,12 @@ $( document ).ready(function() {
             width: $(this).attr("data-width")
         },2000)
     });
+
+    // Tabs
+
+    $('.menu .item')
+        .tab()
+    ;
 });
 
 
